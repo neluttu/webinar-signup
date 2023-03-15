@@ -1,0 +1,244 @@
+body, html {
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Serif Lao', serif;
+    font-size: 18px;
+    font-weight: 300;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container > div:first-of-type {
+    width: 60%;
+    background-color: #21242c;
+    flex-grow: 1;
+}
+
+.container .left {
+    margin-left:auto; 
+    max-width: 750px; 
+    height: 100%;
+    padding:80px 60px 0px 60px;
+    font-size: 18px;
+    min-height: 100%;
+}
+
+.container .right img {
+    width:60px; 
+    height:60px; 
+    border-radius:50%; 
+    margin-right: 15px; 
+    float:left; 
+    vertical-align:middle;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.container .right img:hover {
+    transform: scale(1.1);
+}
+
+.container .right .name {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container .right .title {
+    font-size:14px;
+    font-weight: 100;
+}
+
+.container .right {
+    max-width: 420px; 
+    height: 100%;
+    margin-right: auto;
+    padding: 200px 0px 80px 80px;
+}
+
+.container > div:last-of-type {
+    background-color: #282a33;
+    width: 40%;
+}
+
+small {
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.right svg + svg {
+    margin-left: 8px;
+}
+
+.right svg {
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+}
+  
+#form > div {
+    width: 49%;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#form > div:last-of-type {
+    width: 100%;
+}
+
+#form input[type=text], #form input[type=email] {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    border:1px solid #3f424b;
+    padding: 20px;
+    background-color: transparent;
+    width: 96%;
+    display: block;
+    font-family: 'Noto Serif Lao', serif;
+}
+
+#form select {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    border:1px solid #3f424b;
+    padding: 24px;
+    background-color: transparent;
+    width: 96%;
+    display: block;
+    
+}
+
+#form textarea {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    border:1px solid #3f424b;
+    font-family: 'Noto Serif Lao', serif;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    display: block;
+}
+
+::placeholder {
+    color: #8c9098;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Serif Lao', serif;
+}
+
+
+input[type=submit] {
+    padding: 20px 40px;
+    background-color: white;
+    text-align: right;
+    display: inline-block;
+    color: #21242c;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all .3s ease;
+    border: 0px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #282a33;
+    color: white;
+}
+
+input[type=checkbox] {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background-color: transparent;
+    border:1px solid #3f424b;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Noto Serif Lao', serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+    .container > div:first-of-type {
+        width: 100%;
+        background-color: #21242c;
+        margin: auto;
+    }
+    
+    .container .left {
+        margin-left:auto; 
+        max-width: 750px; 
+        height: 100%;
+        padding:80px 20px 0px 20px;
+        font-size: 18px;
+    }
+
+    .container > div:last-of-type {
+        background-color: #282a33;
+        width: 100%;
+        min-height: 100%;
+    }
+    
+    .container .right {
+        max-width: 90%; 
+        width: 100%;
+        height: 100%;
+        margin-right: auto;
+        padding: 20px;
+        margin: auto;
+    }
+
+    
+}
