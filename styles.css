@@ -228,7 +228,6 @@ label {
     .container > div:last-of-type {
         background-color: #282a33;
         width: 100%;
-        min-height: 100%;
     }
     
     .container .right {
